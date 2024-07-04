@@ -1,0 +1,22 @@
+/*medium*/
+@font-face {
+    font-family:  'InterTight';
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: url('../fonts/InterTight-VariableFont_wght.ttf');
+  }
+
+/*semibold*/
+  @font-face {
+    font-family:  'InterTight';
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    src: url('../fonts/InterTight-VariableFont_wght.ttf');
+  }
+
+
+
+
+  
