@@ -1,22 +1,15 @@
-/*medium*/
 @font-face {
-    font-family:  'InterTight';
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-    src: url('../fonts/InterTight-VariableFont_wght.ttf');
-  }
+  font-display: swap;
+  font-family: 'Epilogue';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/epilogue-v17-latin-regular.woff2') format('woff2');
+}
 
-/*semibold*/
-  @font-face {
-    font-family:  'InterTight';
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-    src: url('../fonts/InterTight-VariableFont_wght.ttf');
-  }
-
-
-
-
-  
+@font-face {
+  font-display: swap;
+  font-family: 'Epilogue';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/epilogue-v17-latin-regular.woff2') format('woff2');
+}
