@@ -28,6 +28,11 @@
   -webkit-text-size-adjust: 100%;
 }
 
+body {
+  color: var(--color-text);
+  background: var(--color-background);
+}
+
 .container {
   max-width: 375px;
   padding: 0 16px 64px;
