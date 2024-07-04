@@ -12,9 +12,59 @@
 @import url('./reviews.css');
 
 :root {
+  font-family: 'Epilogue', sans-serif;
+
+  --color-text: #fafafa;
+  --color-background: #1c1d20;
+  --color-card: #242527;
+  --color-arrow: #3b3b3b;
+  --color-button: #ed3b44;
+  --color-button-pseudo: #e0373f;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+body {
+  color: var(--color-text);
+  background: var(--color-background);
+}
+
+.container {
+  max-width: 375px;
+  padding: 0 16px 64px;
+}
+
+.hero-container {
+  max-width: 375px;
+  padding: 0 16px 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px 96px;
+  }
+
+  .header-container,
+  .hero-container {
+    max-width: 768px;
+    padding: 0 32px 64px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 32px 164px;
+  }
+
+  .header-container,
+  .hero-container {
+    max-width: 1440px;
+    padding: 0 32px 96px;
+  }
 }
