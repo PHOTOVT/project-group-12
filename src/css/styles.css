@@ -36,20 +36,33 @@ body {
   background: var(--color-background);
 }
 
+/* все кроме header и covers */
 .container {
   max-width: 375px;
   padding: 0 16px 64px;
 }
 
+/* только для header */
 .header-container {
   max-width: 375px;
   padding: 32px 16px 169px;
+}
+
+/* только для covers */
+.covers-container {
+  max-width: 375px;
+  padding: 64px 0;
 }
 
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
     padding: 0 32px 96px;
+  }
+
+  .covers-container {
+    max-width: 768px;
+    padding: 96px 0;
   }
 
   .header-container {
@@ -62,5 +75,18 @@ body {
   .container {
     max-width: 1440px;
     padding: 0 32px 164px;
+  }
+
+  .covers-container {
+    max-width: 1440px;
+    padding: 164px 0;
+  }
+
+  .header-container {
+    max-width: 1440px;
+  }
+
+  .footer-container {
+    padding: 0 196px 164px;
   }
 }
