@@ -47,26 +47,22 @@ body {
 
 @media only screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
     padding: 0 32px 96px;
   }
 
   .header-container,
   .hero-container {
-    max-width: 768px;
     padding: 0 32px 64px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .container {
-    max-width: 1440px;
     padding: 0 32px 164px;
   }
 
   .header-container,
   .hero-container {
-    max-width: 1440px;
     padding: 0 32px 96px;
   }
 }
