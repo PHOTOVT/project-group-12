@@ -54,17 +54,12 @@ input::placeholder {
 }
 
 .form-button {
-  font-family: 'Inter Tight', sans-serif;
-  appearance: none;
-  background-color: transparent;
   border: none;
   color: inherit;
   font: inherit;
   cursor: pointer;
-  padding: 0;
-  margin: 0;
+  padding: 40px 32px;
   outline: none;
-  padding: 0;
   background: var(--color-button);
   border-radius: 100%;
   width: 100px;
@@ -79,10 +74,12 @@ input::placeholder {
 
 .contacts {
   display: flex;
+  text-align: center;
   gap: 4px;
 }
 
-.contact {
+.contacts-email,
+.contacts-phone {
   font-family: 'Inter Tight', sans-serif;
   font-size: 14px;
   letter-spacing: -0.02em;
@@ -90,4 +87,67 @@ input::placeholder {
   border: 1px solid var(--color-transparent-white1);
   border-radius: 60px;
   padding: 10px 12px;
+}
+
+.contacts-email {
+  width: 178px;
+  height: 37px;
+}
+
+.contacts-phone {
+  width: 118px;
+  height: 37px;
+}
+
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: 64px;
+  }
+
+  .title-container {
+    width: 542px;
+    column-gap: 20px;
+  }
+
+  form {
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    margin: 18px 0 78px;
+  }
+
+  input {
+    width: 245px;
+    height: 44px;
+  }
+
+  .form-email {
+    margin-bottom: 0px;
+  }
+
+  .form-comment {
+    margin-bottom: 0px;
+  }
+
+  .form-button {
+    width: 150px;
+    height: 150px;
+    padding: 65px 57px;
+  }
+
+  .contacts {
+    gap: 8px;
+  }
+
+  .contacts-email {
+    padding: 18px 32px;
+    width: 239px;
+    height: 55px;
+  }
+
+  .contacts-phone {
+    padding: 18px 32px;
+    width: 171px;
+    height: 55px;
+  }
 }
