@@ -76,13 +76,13 @@ input::placeholder {
   display: flex;
   text-align: center;
   gap: 4px;
+  font-size: 14px;
+letter-spacing: -0.02em;
 }
 
 .contacts-email,
 .contacts-phone {
   font-family: 'Inter Tight', sans-serif;
-  font-size: 14px;
-  letter-spacing: -0.02em;
   color: var(--color-text);
   border: 1px solid var(--color-transparent-white1);
   border-radius: 60px;
@@ -137,6 +137,7 @@ input::placeholder {
 
   .contacts {
     gap: 8px;
+    font-size: 16px;
   }
 
   .contacts-email {
