@@ -47,16 +47,19 @@ body {
 
 @media only screen and (min-width: 768px) {
   .container {
+    width: 768px;
     padding: 0 32px 96px;
   }
 
   .header-container {
+    width: 768px;
     padding: 32px 32px 188px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .container {
+    width: 1440px;
     padding: 0 32px 164px;
   }
 }
