@@ -15,7 +15,7 @@
   "author": "Vitalii Sakhno <vitalik.tarasovich@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "accordeon": "^1.0.0",
+    "accordion-js": "^3.3.4",
     "axios": "^1.7.2",
     "flatpickr": "^4.6.13",
     "izitoast": "^1.4.0",
