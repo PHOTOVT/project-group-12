@@ -1,15 +1,15 @@
 @font-face {
-  font-display: swap;
-  font-family: 'Epilogue';
+  font-display: swap; 
+  font-family: 'Inter Tight';
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/epilogue-v17-latin-regular.woff2') format('woff2');
+  src: url('../fonts/inter-tight-v7-latin-regular.woff2') format('woff2');
 }
 
 @font-face {
-  font-display: swap;
-  font-family: 'Epilogue';
+  font-display: swap; 
+  font-family: 'Inter Tight';
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/epilogue-v17-latin-regular.woff2') format('woff2');
+  src: url('../fonts/inter-tight-v7-latin-regular.woff2') format('woff2');
 }
