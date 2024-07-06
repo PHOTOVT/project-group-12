@@ -155,17 +155,26 @@
 
 #aboutme #about-hardskills .swiper-slide-active {
     background-color: var(--color-button);
+    transition: 0.5s;
 }
 
 #aboutme #about-hardskills .swiper-button-next {
+    width: 28px;
+    height: 28px;
     position: initial;
     margin-left: 5%;
 }
 
+#about-hardskills .swiper-button-next svg {
+    --color1: var(--color-arrow);
+}
+
+#about-hardskills .swiper-button-next:hover svg {
+    --color1: var(--color-transparent-white2);
+}
+
 #aboutme #about-hardskills .swiper-button-next:after {
-    content: url('../img/arrow-narrow-right.svg');
-    width: 40px; 
-    height: 40px; 
+    content: '';
 }
 
 /* @media screen and (min-width: 375px) {
@@ -218,6 +227,11 @@
         width: 198px!important;
         height: 198px;
     }
+
+    #aboutme #about-hardskills .swiper-button-next {
+        width: 40px;
+        height: 40px;
+    }  
 }
 
 @media screen and (min-width: 1440px) {
