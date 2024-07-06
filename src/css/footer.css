@@ -28,10 +28,7 @@ input {
   border: none;
   background: none;
   appearance: none;
-  padding: 0 0 20px;
   border-bottom: 1px solid var(--color-transparent-white1);
-  width: 343px;
-  height: 44px;
   outline: none;
   color: var(--color-text);
 }
@@ -45,25 +42,14 @@ input::placeholder {
   color: var(--color-transparent-white2);
 }
 
-.form-email {
-  margin-bottom: 16px;
-}
-
-.form-comment {
-  margin-bottom: 32px;
-}
-
 .form-button {
   border: none;
   color: inherit;
   font: inherit;
   cursor: pointer;
-  padding: 40px 32px;
   outline: none;
   background: var(--color-button);
   border-radius: 100%;
-  width: 100px;
-  height: 100px;
 }
 
 .form-button:hover,
@@ -77,7 +63,7 @@ input::placeholder {
   text-align: center;
   gap: 4px;
   font-size: 14px;
-letter-spacing: -0.02em;
+  letter-spacing: -0.02em;
 }
 
 .contacts-email,
@@ -97,6 +83,32 @@ letter-spacing: -0.02em;
 .contacts-phone {
   width: 118px;
   height: 37px;
+}
+
+@media only screen and (max-width: 767px) {
+.contacts {
+  max-width: 300px;
+  flex-wrap: wrap;
+}
+
+  .form-email {
+  margin-bottom: 16px;
+}
+
+.form-comment {
+  margin-bottom: 32px;
+}
+
+input {
+  width: 100%;
+  padding: 0 0 20px;
+}
+
+.form-button {
+  padding: 40px 32px;
+  width: 100px;
+  height: 100px;
+}
 }
 
 @media only screen and (min-width: 768px) {
@@ -121,14 +133,6 @@ letter-spacing: -0.02em;
     height: 44px;
   }
 
-  .form-email {
-    margin-bottom: 0px;
-  }
-
-  .form-comment {
-    margin-bottom: 0px;
-  }
-
   .form-button {
     width: 150px;
     height: 150px;
@@ -138,6 +142,7 @@ letter-spacing: -0.02em;
   .contacts {
     gap: 8px;
     font-size: 16px;
+    max-width: 418px;
   }
 
   .contacts-email {
