@@ -175,6 +175,7 @@
 
 #aboutme #about-hardskills .swiper-button-next:after {
     content: '';
+    display:none;
 }
 
 /* @media screen and (min-width: 375px) {
