@@ -17,6 +17,7 @@
   "dependencies": {
     "accordeon": "^1.0.0",
     "axios": "^1.7.2",
+    "basiclightbox": "^5.0.4",
     "flatpickr": "^4.6.13",
     "izitoast": "^1.4.0",
     "lightbox": "^0.5.0",
