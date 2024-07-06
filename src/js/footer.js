@@ -1,5 +1,4 @@
 import axios from 'axios';
-import * as basicLightbox from 'basiclightbox';
 import iziToast from 'izitoast';
 
 const refs = {

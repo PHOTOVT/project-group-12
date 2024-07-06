@@ -40,18 +40,21 @@ body {
 .container {
   max-width: 375px;
   padding: 0 16px 64px;
+  margin: 0 auto;
 }
 
 /* только для header */
 .header-container {
   max-width: 375px;
   padding: 32px 16px 169px;
+  margin: 0 auto;
 }
 
 /* только для covers */
 .covers-container {
   max-width: 375px;
   padding: 64px 0;
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 768px) {
