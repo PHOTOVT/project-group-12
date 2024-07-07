@@ -10,9 +10,10 @@ const refs = {
   inputComment: document.querySelector('.form-comment'),
   buttonElement: document.querySelector('.form-button'),
   formElement: document.querySelector('.form-cooperation'),
+  errorElement: document.querySelector('.email-error'),
 };
 
-const maxLength = 25;
+const maxLength = 20;
 
 const overflowInput = (inputElement, maxLength) => {
   if (inputElement.value.length > maxLength) {
@@ -20,16 +21,33 @@ const overflowInput = (inputElement, maxLength) => {
   }
 };
 
-refs.inputElements.forEach(inputElement => {
-  inputElement.addEventListener('input', () =>
-    overflowInput(inputElement, maxLength)
-  );
+refs.inputComment.addEventListener('input', () => {
+  overflowInput(refs.inputComment, maxLength);
+});
+
+
+refs.inputEmail.addEventListener('input', () => {
+  const value = refs.inputEmail.value.trim();
+
+  if (!value.match(/^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)) {
+    refs.errorElement.innerHTML = 'Invalid email, try again';
+    refs.inputEmail.style.borderBottomColor = '#ed3b44';
+    refs.errorElement.style.color = '#ed3b44';
+  } else {
+    refs.inputEmail.style.borderBottomColor = '#c6e327';
+    refs.errorElement.style.color = '#c6e327';
+    refs.errorElement.innerHTML = 'Success!';
+  }
+});
+
+refs.inputEmail.addEventListener('blur', () => {
+  refs.errorElement.innerHTML = '';
+  refs.inputEmail.style.borderBottomColor = '';
 });
 
 async function postData(email, comment) {
   const url = 'https://portfolio-js.b.goit.study/api/requests';
   const request = { email, comment };
-  
 
   try {
     const response = await axios.post(url, request);
