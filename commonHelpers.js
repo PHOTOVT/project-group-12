@@ -2,7 +2,7 @@ import{f as u,a as m,b as d,i as f}from"./assets/vendor-84226dc1.js";(function()
       <div class="modal">
       <div class="modal-close-icon-container">
   <svg class="modal-close-icon" width="22" height="22">
-    <use href="../img/sprite.svg#icon-close"></use>
+    <use href="./img/sprite.svg#icon-close"></use>
         </svg>
       </div>
         <h2 class="modal-title">${e.data.title}</h2>
