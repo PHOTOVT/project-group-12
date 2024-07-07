@@ -85,30 +85,63 @@ input::placeholder {
   height: 37px;
 }
 
-@media only screen and (max-width: 767px) {
-.contacts {
-  max-width: 300px;
-  flex-wrap: wrap;
+.basicLightbox--visible .modal {
+  background: var(--color-background);
+  border-radius: 20px;
+  padding: 64px 32px;
+  text-align: center;
+  width: 343px;
+  height: 276px;
 }
 
-  .form-email {
+.modal-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--color-text);
   margin-bottom: 16px;
 }
 
-.form-comment {
-  margin-bottom: 32px;
+.modal-text {
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--color-transparent-white2);
 }
 
-input {
-  width: 100%;
-  padding: 0 0 20px;
+.modal-close-icon-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px 20px 0 0;
 }
 
-.form-button {
-  padding: 40px 32px;
-  width: 100px;
-  height: 100px;
-}
+@media only screen and (max-width: 767px) {
+  .contacts {
+    max-width: 300px;
+    flex-wrap: wrap;
+  }
+
+  .form-email {
+    margin-bottom: 16px;
+  }
+
+  .form-comment {
+    margin-bottom: 32px;
+  }
+
+  input {
+    width: 100%;
+    padding: 0 0 20px;
+  }
+
+  .form-button {
+    padding: 40px 32px;
+    width: 100px;
+    height: 100px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -155,6 +188,11 @@ input {
     padding: 18px 32px;
     width: 171px;
     height: 55px;
+  }
+
+  .basicLightbox--visible .modal {
+    width: 492px;
+    height: 246px;
   }
 }
 
