@@ -6,7 +6,6 @@
 @import url('./footer.css');
 @import url('./header.css');
 @import url('./hero.css');
-@import url('./modal-window.css');
 @import url('./projects.css');
 @import url('./reset.css');
 @import url('./reviews.css');
@@ -36,31 +35,60 @@ body {
   background: var(--color-background);
 }
 
+/* все кроме header и covers */
 .container {
   max-width: 375px;
   padding: 0 16px 64px;
+  margin: 0 auto;
 }
 
+/* только для header */
 .header-container {
   max-width: 375px;
   padding: 32px 16px 169px;
+  margin: 0 auto;
+}
+
+/* только для covers */
+.covers-container {
+  max-width: 375px;
+  padding: 64px 0;
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
     padding: 0 32px 96px;
   }
 
+  .covers-container {
+    max-width: 768px;
+    padding: 96px 0;
+  }
+
   .header-container {
-    width: 768px;
+    max-width: 768px;
     padding: 32px 32px 188px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .container {
-    width: 1440px;
+    max-width: 1440px;
     padding: 0 32px 164px;
+  }
+
+  .covers-container {
+    max-width: 1440px;
+    padding: 164px 0;
+  }
+
+  .header-container {
+    max-width: 1440px;
+  }
+
+  .footer-container {
+    padding: 0 196px 164px;
   }
 }

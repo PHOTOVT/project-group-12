@@ -1,4 +1,5 @@
 .title {
+  font-family: "Inter Tight", sans-serif;
   font-weight: 500;
   font-size: 40px;
   line-height: 1;
@@ -28,10 +29,7 @@ input {
   border: none;
   background: none;
   appearance: none;
-  padding: 0 0 20px;
   border-bottom: 1px solid var(--color-transparent-white1);
-  width: 343px;
-  height: 44px;
   outline: none;
   color: var(--color-text);
 }
@@ -45,30 +43,14 @@ input::placeholder {
   color: var(--color-transparent-white2);
 }
 
-.form-email {
-  margin-bottom: 16px;
-}
-
-.form-comment {
-  margin-bottom: 32px;
-}
-
 .form-button {
-  font-family: 'Inter Tight', sans-serif;
-  appearance: none;
-  background-color: transparent;
   border: none;
   color: inherit;
   font: inherit;
   cursor: pointer;
-  padding: 0;
-  margin: 0;
   outline: none;
-  padding: 0;
   background: var(--color-button);
   border-radius: 100%;
-  width: 100px;
-  height: 100px;
 }
 
 .form-button:hover,
@@ -79,15 +61,145 @@ input::placeholder {
 
 .contacts {
   display: flex;
+  text-align: center;
   gap: 4px;
-}
-
-.contact {
-  font-family: 'Inter Tight', sans-serif;
   font-size: 14px;
   letter-spacing: -0.02em;
+}
+
+.contacts-email,
+.contacts-phone {
+  font-family: 'Inter Tight', sans-serif;
   color: var(--color-text);
   border: 1px solid var(--color-transparent-white1);
   border-radius: 60px;
   padding: 10px 12px;
+}
+
+.contacts-email {
+  width: 178px;
+  height: 37px;
+}
+
+.contacts-phone {
+  width: 118px;
+  height: 37px;
+}
+
+.basicLightbox--visible .modal {
+  background: var(--color-background);
+  border-radius: 20px;
+  padding: 64px 32px;
+  text-align: center;
+  width: 343px;
+  height: 276px;
+}
+
+.modal-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--color-text);
+  margin-bottom: 16px;
+}
+
+.modal-text {
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--color-transparent-white2);
+}
+
+.modal-close-icon-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px 20px 0 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .contacts {
+    max-width: 300px;
+    flex-wrap: wrap;
+  }
+
+  .form-email {
+    margin-bottom: 16px;
+  }
+
+  .form-comment {
+    margin-bottom: 32px;
+  }
+
+  input {
+    width: 100%;
+    padding: 0 0 20px;
+  }
+
+  .form-button {
+    padding: 40px 32px;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: 64px;
+  }
+
+  .title-container {
+    width: 542px;
+    column-gap: 20px;
+  }
+
+  form {
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    margin: 18px 0 78px;
+  }
+
+  input {
+    width: 245px;
+    height: 44px;
+  }
+
+  .form-button {
+    width: 150px;
+    height: 150px;
+    padding: 65px 57px;
+  }
+
+  .contacts {
+    gap: 8px;
+    font-size: 16px;
+    max-width: 418px;
+  }
+
+  .contacts-email {
+    padding: 18px 32px;
+    width: 239px;
+    height: 55px;
+  }
+
+  .contacts-phone {
+    padding: 18px 32px;
+    width: 171px;
+    height: 55px;
+  }
+
+  .basicLightbox--visible .modal {
+    width: 492px;
+    height: 246px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  input {
+    width: 390px;
+    height: 44px;
+  }
 }
