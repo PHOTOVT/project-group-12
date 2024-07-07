@@ -1,0 +1,121 @@
+.container {
+    margin: auto;
+    margin-bottom: 32px;
+   
+}
+
+#benefits {
+    padding: 32px 0;
+    display: grid;
+}
+
+.benefits-list {
+    display: grid;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 16px;
+    margin-bottom: 32px;
+   
+}
+
+.benefits-item {
+    border-radius: 20px;
+    padding: 24px;
+    background-color: var(--color-card);
+    
+}
+.benefits-item:hover {
+    transform: translateY(-5px);
+}
+
+
+.benefits-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 48px;
+    height: 48px;
+    background-color: var(--color-button);
+    margin-bottom: 64px;
+    fill: var(--color-text); 
+}
+
+.benefits-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: rgba(250, 250, 250, 0.4);
+}
+
+.text-contect {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+    color: var(--color-text);
+}
+
+.benefits-description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-transparent-white2);
+  
+}
+
+.order-button {
+    border: 1px solid var(--color-text);
+    border-radius: 60px;
+    padding: 18px 36px;
+   
+    background-color: transparent;
+    color: var(--color-text);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 64px;
+}
+
+.order-button:hover {
+    background-color: var(--color-transparent-white1);
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+      min-width: 768px;
+      max-width: 1440px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .container {
+        min-width: 1440px;
+        padding: 0 32px 164px;
+       
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .benefits-main {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .benefits-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .benefits-main {
+        grid-template-columns: repeat(2, minmax(0, 1fr)); 
+    }
+    .benefits-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));   
+    }
+}
+
