@@ -3,14 +3,14 @@ import 'accordion-js/dist/accordion.min.css';
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-const about = document.querySelector('.about-box')
-const aboutHardskills = document.querySelector('#swiper')
+const about = document.querySelector('.about-box');
+const aboutHardskills = document.querySelector('#swiper');
 
 const aboutAc = new Accordion(about, {
   openOnInit: [0],
   showMultiple: true,
-  collapse: true
-})
+  collapse: true,
+});
 
 const aboutSwiper = new Swiper(aboutHardskills, {
   direction: 'horizontal',
@@ -33,4 +33,4 @@ const aboutSwiper = new Swiper(aboutHardskills, {
     enabled: true,
     onlyInViewport: false,
   },
-})
+});
