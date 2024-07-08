@@ -13,11 +13,28 @@
   margin: 0 17px;
 }
 .project__list {
-  display: flex;
+  /* display: flex; */
   /* flex-wrap: wrap; */
-  justify-content: center;
+  /* justify-content: center; */
+
+  /* ! Slider  style*/
+  position: relative;
+  overflow: hidden;
+  height: 790px;
+  @media (min-width: 787px) {
+    height: 1191px;
+  }
+  @media (min-width: 1140px) {
+    height: 625px;
+  }
 }
 .project__item {
+  /* Gallery style card */
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+
+  /* Style Items */
   flex-wrap: wrap;
   display: flex;
 
@@ -29,6 +46,9 @@
   opacity: 0px;
 
   overflow: hidden;
+}
+.project__item.active {
+  opacity: 1;
 }
 .project__left {
   color: rgba(28, 29, 32, 1);
