@@ -17,7 +17,6 @@
     align-items: center;
     flex-direction: row;
     gap: 4px;
-
 }
 
 .social-list {
@@ -72,6 +71,12 @@
     background-color: transparent;
 }
 
+.heroSection {
+    position: relative;
+}
+
+
+
 
 @media screen and (min-resolution: 192dpi) and (min-width: 768px) {
     .hero {
@@ -114,7 +119,7 @@
         color: #fafafa;
     }
 
-    .mail-btn {
+    .address-link {
         border: 1px solid rgba(250, 250, 250, 0.2);
         border-radius: 60px;
         padding: 18px 24px;
@@ -127,11 +132,6 @@
         width: 473px;
         height: 55px;
     }
-
-    /* .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)), url('../images/hero_img2/dark-bg-tabl@2x.jpg')
-    } */
 }
 
 
