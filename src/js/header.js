@@ -32,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
       .scrollIntoView({ behavior: 'smooth' });
     mobMenu.classList.remove('is-open');
   });
-
 });
 document.addEventListener('DOMContentLoaded', function () {
   const menuButton = document.querySelector('.menu-button');
