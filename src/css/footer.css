@@ -151,13 +151,13 @@ input::placeholder {
 
   .footer-container {
     background: var(--color-background)
-      url(./img/footer.img/background-mobile1x.png) right center no-repeat;
+      url(../img/footer.img/background-mobile1x.png) right center no-repeat;
   }
 }
 
 @media screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .footer-container {
-    background: var(--color-background) url('./img/footer.img/background-mobile2x.png') right
+    background: var(--color-background) url('../img/footer.img/background-mobile2x.png') right
       center no-repeat;
   }
 }
@@ -215,13 +215,13 @@ input::placeholder {
 
   .footer-container {
     background: var(--color-background)
-      url(./img/footer.img/background-tablet1x.png) right center no-repeat;
+      url(../img/footer.img/background-tablet1x.png) right center no-repeat;
   }
 }
 
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .footer-container {
-    background: var(--color-background) url('./img/footer.img/background-tablet2x.png') right
+    background: var(--color-background) url('../img/footer.img/background-tablet2x.png') right
       center no-repeat;
   }
 }
@@ -234,13 +234,13 @@ input::placeholder {
 
   .footer-container {
     background: var(--color-background)
-      url(./img/footer.img/background-desktop1x.png) right center no-repeat;
+      url(../img/footer.img/background-desktop1x.png) right center no-repeat;
   }
 }
 
 @media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
   .footer-container {
-    background: var(--color-background) url('./img/footer.img/background-desktop2x.png') right
+    background: var(--color-background) url('../img/footer.img/background-desktop2x.png') right
       center no-repeat;
   }
 }
