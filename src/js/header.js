@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobMenu = document.querySelector('.mob-menu');
   const menuLinks = document.querySelectorAll('.header-menu');
   const orderProjectBtn = document.getElementById('order-project-btn');
+  const orderProjectBtnMain = document.getElementById('order-project-btn-main');
 
   openMenuBtn.addEventListener('click', () => {
     mobMenu.classList.add('is-open');
@@ -20,11 +21,19 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   orderProjectBtn.addEventListener('click', () => {
-    document.getElementById('work-together').scrollIntoView({ behavior: 'smooth' });
-    mobMenu.classList.remove('active');
-});
-});
+    document
+      .getElementById('work-together')
+      .scrollIntoView({ behavior: 'smooth' });
+    mobMenu.classList.remove('is-open');
+  });
+  orderProjectBtnMain.addEventListener('click', () => {
+    document
+      .getElementById('work-together')
+      .scrollIntoView({ behavior: 'smooth' });
+    mobMenu.classList.remove('is-open');
+  });
 
+});
 document.addEventListener('DOMContentLoaded', function () {
   const menuButton = document.querySelector('.menu-button');
   const menuList = document.getElementById('menuList');
