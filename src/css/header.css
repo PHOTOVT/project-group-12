@@ -1,3 +1,15 @@
+.navigation {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-right: 0;
+  padding: 32px 16px 0;
+  flex-direction: row;
+  position: absolute;
+  z-index: 10;
+}
+
 .btn_h-one {
   margin: 0;
 }
@@ -101,7 +113,7 @@
   padding: 14px 31px;
   width: 164px;
   height: 45px;
-  background:  var(--color-button);
+  background: var(--color-button);
   font: 500 14px 'Inter Tight', sans-serif;
   letter-spacing: -0.02em;
   color: #fafafa;
@@ -164,7 +176,7 @@ html {
     padding: 14px 31px;
     width: 164px;
     height: 45px;
-    background:var(--color-button);
+    background: var(--color-button);
     font: 500 14px 'Inter Tight', sans-serif;
     letter-spacing: -0.02em;
     color: var(--color-text);
