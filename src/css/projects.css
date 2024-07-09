@@ -170,7 +170,7 @@
   color: azure;
   background-color: transparent;
   position: relative;
-  fill: --color-transparent-white2;
+  fill: white;
 }
 .svg__button-left {
   transform: translate(-50%, -50%);
@@ -188,7 +188,7 @@
   border: 1px solid var(--color-transparent-white2);
   background-color: transparent;
   position: relative;
-  fill: --color-transparent-white2;
+  fill: white;
 }
 
 button:disabled {
