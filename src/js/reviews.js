@@ -4,14 +4,12 @@ import 'swiper/css';
 
 async function fetchData() {
   try {
-    // Делаем GET запрос с помощью Axios
     const response = await axios.get(
       'https://portfolio-js.b.goit.study/api/reviews'
     );
-    // Получаем массив объектов из ответа
     const data = response.data;
 
-    // Вызываем функцию для рендера данных в DOM
+
     renderData(data);
   } catch (error) {
     console.error('Ошибка при получении данных:', error.message);
@@ -21,12 +19,9 @@ async function fetchData() {
 function renderData(data) {
   const resultsContainer = document.querySelector('.reviews-list');
 
-  // Очищаем контейнер результатов перед добавлением новых элементов
   resultsContainer.innerHTML = '';
 
-  // Проходимся по массиву объектов и создаем элементы для каждого объекта
   data.forEach(item => {
-    // Создаем элементы для заголовка, изображения и описания
 
     const image = document.createElement('img');
     image.classList.add('list-image');
@@ -41,17 +36,14 @@ function renderData(data) {
     description.classList.add('list-review');
     description.textContent = item.review;
 
-    // Создаем контейнер для элементов текущего объекта
     const itemContainer = document.createElement('li');
     itemContainer.classList.add('result-item');
     itemContainer.classList.add('swiper-slide');
 
-    // Добавляем элементы в контейнер объекта
     itemContainer.appendChild(image);
     itemContainer.appendChild(header);
     itemContainer.appendChild(description);
 
-    // Добавляем контейнер объекта в контейнер результатов
     resultsContainer.appendChild(itemContainer);
   });
 }
