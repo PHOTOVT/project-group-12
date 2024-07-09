@@ -1,0 +1,85 @@
+:root {
+    --navy-blue-color: #16161a;
+    --background-gradient: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7) 100%
+  );
+  }
+  
+    
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+    .covers-container {
+      position: relative;
+      max-width: 375px;
+      padding: 64px 0;
+      
+  
+    }
+    .marquee {
+      display:block;
+      position: absolute;
+      right: 0;
+      left: 0;
+      overflow: hidden;
+      background-color: var(--navy-blue-color);
+      background-image: var(--backgroun-gradient),
+        url(../img/bcg.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    
+    .marquee__inner {
+      margin-bottom: 20px;
+       display: flex;
+       transform: rotate(17deg);
+    }
+    
+    .marquee__line {
+      flex-shrink: 0;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+      white-space: nowrap;
+      animation-name: marqueeLine;
+      animation-duration: 5s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+    }
+  
+    @media only screen and (min-width: 768px) {
+    
+      .covers-container {
+        max-width: 768px;
+        padding: 96px 0;
+      }
+    
+    }
+    
+    @media only screen and (min-width: 1440px) {
+      .container {
+        max-width: 1440px;
+        padding: 0 32px 164px;
+      }
+    
+      .covers-container {
+        max-width: 1440px;
+        padding: 164px 0;
+      }
+    }
+    
+    @keyframes marqueeLine {
+      from {
+        transform: translateX(-20%);
+      }
+      
+      to {
+        transform: translateX(-120%);
+      }
+    }
+    
