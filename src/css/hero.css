@@ -74,7 +74,7 @@
   #hero #hero-wrapper h1 {
     font-size: 90px;
     line-height: 90px;
-    letter-spacing: -1px;
+    letter-spacing: -3px;
   }
 
   #hero #hero-wrapper #hero-links {
@@ -93,7 +93,7 @@
 }
 
 #hero #hero-wrapper #hero-links ul li:hover a {
-  border-color: var(—color-text);
+  border-color: var(--color-text);
 }
 
 @media screen and (min-width: 1440px) {

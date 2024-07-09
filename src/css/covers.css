@@ -1,4 +1,4 @@
-*,
+* ,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -30,6 +30,12 @@
   right: -800px;
   left: 0;
   overflow: hidden;
+  opacity: 0;
+}
+
+.marquee.visible {
+  opacity: 1;
+  transition: 0.5s;
 }
 
 .marquee__inner {
@@ -59,8 +65,7 @@
   animation-direction: alternate-reverse;
 }
 
-.marque-image {
-}
+
 
 @keyframes marqueeLine {
   from {
