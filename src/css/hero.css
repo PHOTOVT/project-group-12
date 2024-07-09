@@ -102,6 +102,10 @@
     height: 900px;
   }
 
+  #hero .hero-bg-line {
+    height: 100%;
+ }
+
   #hero {
     background: url('../img/hero.img/hero-pc.webp') no-repeat;
   }
