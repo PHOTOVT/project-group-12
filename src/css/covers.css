@@ -56,7 +56,7 @@
 }
 
 .marquee__line2 {
-  animation-direction: reverse;
+  animation-direction: alternate-reverse;
 }
 
 .marque-image {

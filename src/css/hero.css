@@ -84,6 +84,7 @@
   #hero #hero-wrapper #hero-links ul li a {
     width: 55px;
     height: 55px;
+    transition: 0.3s;
   }
 
   #hero #hero-wrapper #hero-links ul li:last-child a {
@@ -91,7 +92,16 @@
   }
 }
 
+#hero #hero-wrapper #hero-links ul li:hover a {
+  border-color: var(—color-text);
+}
+
 @media screen and (min-width: 1440px) {
+  #hero,
+  #hero #hero-wrapper {
+    height: 900px;
+  }
+
   #hero {
     background: url('../img/hero.img/hero-pc.webp') no-repeat;
   }

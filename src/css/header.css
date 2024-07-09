@@ -249,4 +249,8 @@ html {
     width: 163px;
     height: 55px;
   }
+
+  .header-container .navigation {
+    padding: 32px;
+  }
 }
