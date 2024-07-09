@@ -41,16 +41,19 @@
 }
 
 .reviews-list {
+    height: auto!important;
+}
+
+.rev-global {
+    overflow: hidden;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    margin-bottom: 32px;
 }
 
 .result-item {
     border-radius: 20px;
     border: 1px solid rgba(250, 250, 250, 0.20);
     padding: 32px 24px;
-    margin-bottom: 32px;      
 }
 
 .reviews-container {
@@ -97,9 +100,7 @@
     justify-content: center;
 }
 
-.rev-global {
-    overflow: hidden;
-}
+
 
 
 @media screen and (min-width: 768px) {
