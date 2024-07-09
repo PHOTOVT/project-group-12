@@ -38,7 +38,7 @@
   margin-bottom: 25px;
 }
 
-.marquee__line {
+.marquee__line1, .marquee__line2 {
   flex-shrink: 0;
   display: flex;
   margin-right: 25px;
@@ -49,7 +49,14 @@
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
+}
+
+.marquee__line1 {
   animation-direction: alternate;
+}
+
+.marquee__line2 {
+  animation-direction: reverse;
 }
 
 .marque-image {
