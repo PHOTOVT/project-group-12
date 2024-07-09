@@ -1,9 +1,9 @@
 <section>
-  <div class="project swiper">
+  <div class="project__swiper">
     <h2 class="project__header">Projects</h2>
 
-    <ul class="project__list swiper-wrapper">
-      <li class="project__item swiper-slide">
+    <ul class="project__list">
+      <li class="project__item">
         <div class="project__left">
           <ul class="project__stack-list">
             <li class="project__stack-item">#react</li>
@@ -28,7 +28,7 @@
           /></picture>
         </div>
       </li>
-      <li class="project__item swiper-slide">
+      <li class="project__item">
         <div class="project__left">
           <ul class="project__stack-list">
             <li class="project__stack-item">#react</li>
@@ -53,7 +53,7 @@
           /></picture>
         </div>
       </li>
-      <li class="project__item swiper-slide">
+      <li class="project__item">
         <div class="project__left">
           <ul class="project__stack-list">
             <li class="project__stack-item">#react</li>
@@ -82,14 +82,24 @@
     <div class="swiper-scrollbar"></div>
 
     <div class="project__buttom">
-      <button class="project__button-left swiper-button-prev">
-        <svg width="25" height="24">
-          <use href="../img/project.img/svg/arrow-narrow-right.svg"></use>
+      <button class="project__button-left">
+        <svg
+          width="25"
+          class="svg__button-left"
+          height="24"
+          viewBox="0 0 48 48"
+        >
+          <use href="./img/sprite.svg#icon-arrow-left"></use>
         </svg>
       </button>
-      <button class="project__button-right swiper-button-next">
-        <svg width="25" height="24">
-          <use href="../img/project.img/svg/arrowLeft.svg"></use>
+      <button class="project__button-right">
+        <svg
+          class="svg__button-right"
+          width="25"
+          height="24"
+          viewBox="0 0 48 48"
+        >
+          <use href="./img/sprite.svg#icon-arrow-right"></use>
         </svg>
       </button>
     </div>
