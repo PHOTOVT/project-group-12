@@ -1,5 +1,6 @@
 #hero {
   background: url('../img/hero.img/hero-mob.webp') no-repeat;
+  background-size: cover!important;
   height: 100vh;
   position: relative;
   margin-bottom: 64px;
@@ -7,11 +8,11 @@
 
 #hero .hero-bg-line {
   background: var(--color-background);
-  width: 20%;
+  width: 5%;
   height: 100vh;
   position: absolute;
   top: 0;
-  right: -8px;
+  right: 0;
   z-index: 1;
 }
 
