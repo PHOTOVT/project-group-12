@@ -62,13 +62,13 @@
   top: 0;
   left: 0;
   z-index: 9999;
-  background-color: #fff;
+  background-color: var(--color-text);
   width: 100%;
   height: 100vh;
   overflow: auto;
-  background-image: url(/img/header.img/bg.jpg);
+  background-image: url(../img/hero.img/hero-pc.webp);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: -200px;
   background-size: cover;
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
@@ -116,7 +116,7 @@
   background: var(--color-button);
   font: 500 14px 'Inter Tight', sans-serif;
   letter-spacing: -0.02em;
-  color: #fafafa;
+  color: var(--color-text);
   border: none;
   margin: 0 auto;
   margin-bottom: 64px;
