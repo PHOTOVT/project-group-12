@@ -66,6 +66,13 @@
   margin-right: 0;
 }
 
+@media screen and (max-width: 375px) {
+  #hero #hero-wrapper #hero-links ul {
+    flex-wrap: wrap;
+    row-gap: 8px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   #hero {
     background: url('../img/hero.img/hero-tab.webp') no-repeat;
@@ -104,7 +111,7 @@
 
   #hero .hero-bg-line {
     height: 100%;
- }
+  }
 
   #hero {
     background: url('../img/hero.img/hero-pc.webp') no-repeat;

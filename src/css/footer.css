@@ -124,6 +124,13 @@ input::placeholder {
   margin: 20px 20px 0 0;
 }
 
+@media only screen and (max-width: 375px) {
+  .contacts {
+    flex-wrap: wrap;
+    row-gap: 8px;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .form-email {
     margin-bottom: 16px;

@@ -9,6 +9,7 @@ const prSwiper = new Swiper(projectSwiper, {
   slidesPerView: 1,
   centeredSlides: true,
   spaceBetween: 8,
+  speed: 1000,
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-pr-button-next',

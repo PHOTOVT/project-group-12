@@ -9,10 +9,9 @@ async function fetchData() {
     );
     const data = response.data;
 
-
     renderData(data);
   } catch (error) {
-    console.error('Ошибка при получении данных:', error.message);
+    console.error(error.message);
   }
 }
 
@@ -22,7 +21,6 @@ function renderData(data) {
   resultsContainer.innerHTML = '';
 
   data.forEach(item => {
-
     const image = document.createElement('img');
     image.classList.add('list-image');
     image.src = item.avatar_url;
@@ -56,6 +54,7 @@ const swiperRev = new Swiper(swiperReviews, {
   loop: false,
   slidesPerView: 1,
   spaceBetween: 8,
+  speed: 2000,
   breakpoints: {
     768: {
       slidesPerView: 2,

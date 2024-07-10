@@ -165,6 +165,10 @@ html {
 }
 
 @media screen and (min-width: 768px) {
+  .mob-menu.is-open {
+    display: none;
+  }
+
   .header-menu-list {
     display: flex;
     gap: 40px;
